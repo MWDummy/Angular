@@ -42,3 +42,25 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+
+# Dependencies - Never push node_modules!
+/node_modules
+
+# Angular build outputs
+/dist
+/.angular
+
+# Local development logs and caches
+*.log
+.npm
+.eslintcache
+
+# Editor specific configurations
+/.vscode
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
