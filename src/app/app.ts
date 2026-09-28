@@ -3,10 +3,12 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
+  imports: [],
+  templateUrl: 'app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Minggu_Ke_2');
+  name = "Tegar Ardana";
+  nim = "272102692";
+  title = "Angular Bootstrap";
 }
