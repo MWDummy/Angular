@@ -1,0 +1,257 @@
+<div class="container my-4">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a
+      href="/"
+      class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+    >
+      <span class="fs-4">{{ name }} ({{ nim }})</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+    </ul>
+  </header>
+</div>
+
+<div class="b-example-divider"></div>
+
+<div class="container">
+  <div class="row g-3 mx-2">
+    <!-- Action Buttons Block -->
+    <div class="col-12">
+      <button class="btn btn-success m-1"><i class="fa fa-whatsapp"></i> Kirim WhatsApp</button>
+      <button class="btn btn-primary m-1"><i class="fa fa-plus"></i> Record Baru</button>
+      <button class="btn btn-danger m-1"><i class="fa fa-trash"></i> Hapus Record</button>
+      <button class="btn btn-warning m-1"><i class="fa fa-edit"></i> Ubah Record</button>
+      <button class="btn btn-info m-1"><i class="fa fa-search"></i> Pencarian</button>
+      <button class="btn btn-secondary m-1"><i class="fa fa-times"></i> Batal</button>
+    </div>
+
+    <!-- Standalone Text Input Box -->
+    <div class="col-12">
+      <input type="text" class="form-control" placeholder="Ini TextBox" />
+    </div>
+
+    <!-- Dropdown / Select Field -->
+    <div class="col-12">
+      <select class="form-select">
+        <option value="SI/SI">SI/SI</option>
+        <option value="TI/TI">TI/TI</option>
+      </select>
+    </div>
+
+    <!-- Input Group Element (E-mail block) -->
+    <div class="col-12">
+      <div class="input-group">
+        <span class="input-group-text" id="addon-email">E-mail</span>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Masukkan alamat e-mail"
+          aria-describedby="addon-email"
+        />
+      </div>
+    </div>
+
+    <!-- Contextual Colors Table Layout Section -->
+    <div class="col-12">
+      <div class="table-responsive border rounded-3">
+        <table class="table align-middle mb-0">
+          <thead>
+            <tr>
+              <th scope="col">Class</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Default</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr class="table-primary">
+              <td>Primary</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr class="table-secondary">
+              <td>Secondary</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr class="table-success">
+              <td>Success</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr class="table-danger">
+              <td>Danger</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr class="table-warning">
+              <td>Warning</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr class="table-info">
+              <td>Info</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr class="table-light">
+              <td>Light</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr class="table-dark">
+              <td>Dark</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Custom Dropdown Menu with Filter (Takes full 12-column width) -->
+    <div class="col-12">
+      <div
+        class="w-100 border border-secondary-subtle bg-body rounded-3 shadow-sm overflow-hidden"
+        id="customFilterMenu"
+      >
+        <!-- Search Input Bar -->
+        <div class="p-3 bg-body-tertiary border-bottom">
+          <input
+            type="search"
+            class="form-control"
+            id="listSearchInput"
+            autocomplete="off"
+            placeholder="Type to filter..."
+          />
+        </div>
+
+        <!-- Filterable Content List -->
+        <div
+          class="dropdown-menu d-block position-static pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px"
+          data-bs-theme="light"
+        >
+          <form class="p-2 mb-2 bg-body-tertiary border-bottom">
+            <input
+              type="search"
+              class="form-control"
+              autocomplete="false"
+              placeholder="Type to filter..."
+            />
+          </form>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                <span class="d-inline-block bg-success rounded-circle p-1"></span>
+                Action
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+                Another action
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                <span class="d-inline-block bg-danger rounded-circle p-1"></span>
+                Something else here
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+                <span class="d-inline-block bg-info rounded-circle p-1"></span>
+                Separated link
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5"
+          tabindex="-1"
+          role="dialog"
+          id="modalSheet"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content rounded-4 shadow">
+              <div class="modal-header border-bottom-0">
+                <h1 class="modal-title fs-5">Modal title</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body py-0">
+                <p>
+                  This is a modal sheet, a variation of the modal that docs itself to the bottom of
+                  the viewport like the newer share sheets in iOS.
+                </p>
+              </div>
+              <div
+                class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0"
+              >
+                <button type="button" class="btn btn-lg btn-primary">Save changes</button>
+                <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Script to handle live filtering inside the full width input list -->
+        <script>
+          document.getElementById('listSearchInput').addEventListener('keyup', function () {
+            const filterText = this.value.toLowerCase();
+            const rows = document.querySelectorAll('#customFilterMenu .filter-item');
+
+            rows.forEach(function (row) {
+              const matchLabel = row.querySelector('.dropdown-item').textContent.toLowerCase();
+              if (matchLabel.includes(filterText)) {
+                row.style.setProperty('display', 'block', 'important');
+              } else {
+                row.style.setProperty('display', 'none', 'important');
+              }
+            });
+          });
+        </script>
+
+        <div class="container">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+              </li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2026 Yohan Company</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
