@@ -1,0 +1,18 @@
+/* 1. Base rule applies to everything first */
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0; /* Removed !important so mobile can change it */
+}
+
+/* 2. Media query comes LAST to override the base rule on small screens */
+@media screen and (max-width: 768px) {
+    .signup {
+      min-height: auto;
+      padding: 40px 20px;
+      display: block; 
+    }
+}
