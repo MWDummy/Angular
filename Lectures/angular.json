@@ -136,6 +136,71 @@
           "builder": "@angular/build:unit-test"
         }
       }
+    },
+    "Lecture_3": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/lecture-3",
+      "sourceRoot": "projects/lecture-3/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "projects/lecture-3/src/main.ts",
+            "tsConfig": "projects/lecture-3/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/lecture-3/public"
+              }
+            ],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "projects/lecture-3/src/styles.css"
+            ],
+            "polyfills": ["@angular/localize/init"]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "Lecture_3:build:production"
+            },
+            "development": {
+              "buildTarget": "Lecture_3:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test"
+        }
+      }
     }
   }
 }
