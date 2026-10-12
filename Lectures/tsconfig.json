@@ -32,6 +32,12 @@
     },
     {
       "path": "./projects/lecture-2/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/lecture-4/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/lecture-4/tsconfig.spec.json"
     }
   ]
 }
