@@ -220,7 +220,11 @@
                 "input": "projects/lecture-4/public"
               }
             ],
-            "styles": ["projects/lecture-4/src/styles.css"]
+            "styles": [
+              "projects/lecture-4/src/styles.css",
+              "projects/lecture-4/public/css/adminlte.css"
+            ],
+            "scripts": ["projects/lecture-4/public/js/adminlte.js"]
           },
           "configurations": {
             "production": {
