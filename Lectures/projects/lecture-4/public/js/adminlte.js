@@ -697,6 +697,16 @@
             document.body.classList.remove(CLASS_NAME_SIDEBAR_COLLAPSE);
             if (this.isMobileSize()) {
                 document.body.classList.add(CLASS_NAME_SIDEBAR_OPEN);
+                let sidebarOverlay = document.querySelector(`.${CLASS_NAME_SIDEBAR_OVERLAY}`);
+                if (!sidebarOverlay) {
+                    const appWrapper = document.querySelector(SELECTOR_APP_WRAPPER) || document.body;
+                    sidebarOverlay = document.createElement('div');
+                    sidebarOverlay.className = CLASS_NAME_SIDEBAR_OVERLAY;
+                    sidebarOverlay.addEventListener('click', () => {
+                        this.collapse();
+                    });
+                    appWrapper.append(sidebarOverlay);
+                }
             }
             dispatchCustomEvent(this._element, EVENT_OPENED);
         }
@@ -709,7 +719,9 @@
             dispatchCustomEvent(this._element, EVENT_COLLAPSED);
         }
         toggle() {
-            const isCollapsed = this.isCollapsed();
+            const isCollapsed = this.isMobileSize()
+                ? !this.isExplicitlyOpen()
+                : this.isCollapsed();
             if (isCollapsed) {
                 this.expand();
             }
@@ -814,6 +826,19 @@
         const sidebar = document.querySelector(SELECTOR_APP_SIDEBAR);
         if (sidebar) {
             PushMenu.getOrCreateInstance(sidebar).toggle();
+        }
+    });
+    document.addEventListener('click', event => {
+        const target = event.target;
+        if (!(target instanceof Element)) {
+            return;
+        }
+        const navLink = target.closest('.app-sidebar .nav-link');
+        if (navLink && !navLink.parentElement?.querySelector('.nav-treeview') && globalThis.innerWidth <= 991.98) {
+            const sidebar = document.querySelector(SELECTOR_APP_SIDEBAR);
+            if (sidebar) {
+                PushMenu.getOrCreateInstance(sidebar).collapse();
+            }
         }
     });
     onDOMContentLoaded(() => {
