@@ -240,7 +240,8 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "serviceWorker": "projects/lecture-4/ngsw-config.json"
             },
             "development": {
               "optimization": false,
