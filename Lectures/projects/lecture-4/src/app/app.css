@@ -1,0 +1,262 @@
+.theme-dark {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+.theme-dark .app-header {
+  background-color: #1a1a1a !important;
+  border-color: #3a3a3a !important;
+}
+
+.theme-dark .app-footer {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border-top-color: #3a3a3a !important;
+}
+
+.theme-dark .app-sidebar {
+  background-color: #1a1a1a !important;
+}
+
+.theme-dark .app-content {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+.theme-dark .card {
+  background-color: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+  color: #ffffff !important;
+}
+
+.theme-dark .card-header {
+  background-color: #2a2a2a !important;
+  border-bottom-color: #3a3a3a !important;
+  color: #ffffff !important;
+}
+
+.theme-dark .card-body {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+
+.theme-dark .card-footer {
+  background-color: #2a2a2a !important;
+  border-top-color: #3a3a3a !important;
+  color: #ffffff !important;
+}
+
+.theme-dark .table {
+  color: #ffffff !important;
+  background-color: #2a2a2a !important;
+}
+
+.theme-dark .table th,
+.theme-dark .table td {
+  border-color: #3a3a3a !important;
+  color: #ffffff !important;
+  background-color: #2a2a2a !important;
+}
+
+.theme-dark .table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.theme-dark .form-control,
+.theme-dark .form-select {
+  background-color: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+  color: #ffffff !important;
+}
+
+.theme-dark .btn {
+  background-color: #3a3a3a !important;
+  border-color: #4a4a4a !important;
+  color: #ffffff !important;
+}
+
+.theme-dark .badge {
+  background-color: #4a4a4a !important;
+  color: #ffffff !important;
+}
+
+.theme-dark .progress {
+  background-color: #2a2a2a !important;
+}
+
+.theme-dark .progress-bar {
+  background-color: #ffffff !important;
+}
+
+.theme-dark .input-group-text {
+  background-color: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+  color: #ffffff !important;
+}
+
+.theme-dark .app-header .nav-link,
+.theme-dark .app-header .navbar-brand,
+.theme-dark .app-header a {
+  color: #ffffff !important;
+}
+
+.theme-dark .app-header .nav-link:hover,
+.theme-dark .app-header .nav-link:focus {
+  color: #e0e0e0 !important;
+}
+
+.theme-dark .app-header .dropdown-menu {
+  background-color: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.theme-dark .app-header .dropdown-item {
+  color: #ffffff !important;
+}
+
+.theme-dark .app-header .dropdown-item:hover {
+  background-color: #3a3a3a !important;
+  color: #ffffff !important;
+}
+
+.theme-dark .app-header .badge {
+  background-color: #4a4a4a !important;
+  color: #ffffff !important;
+}
+
+.theme-dark .app-header .form-control {
+  background-color: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+  color: #ffffff !important;
+}
+
+.theme-dark .app-header .navbar-search {
+  background-color: #2a2a2a !important;
+}
+
+.theme-light {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.theme-light .app-header {
+  background-color: #ffffff !important;
+  border-color: #dee2e6 !important;
+}
+
+.theme-light .app-footer {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-top-color: #dee2e6 !important;
+}
+
+.theme-light .app-sidebar {
+  background-color: #ffffff !important;
+}
+
+.theme-light .app-content {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.theme-light .card {
+  background-color: #ffffff !important;
+  border-color: #dee2e6 !important;
+  color: #000000 !important;
+}
+
+.theme-light .card-header {
+  background-color: #f8f9fa !important;
+  border-bottom-color: #dee2e6 !important;
+  color: #000000 !important;
+}
+
+.theme-light .card-body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.theme-light .card-footer {
+  background-color: #f8f9fa !important;
+  border-top-color: #dee2e6 !important;
+  color: #000000 !important;
+}
+
+.theme-light .table {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+}
+
+.theme-light .table th,
+.theme-light .table td {
+  border-color: #dee2e6 !important;
+  color: #000000 !important;
+  background-color: #ffffff !important;
+}
+
+.theme-light .form-control,
+.theme-light .form-select {
+  background-color: #ffffff !important;
+  border-color: #ced4da !important;
+  color: #000000 !important;
+}
+
+.theme-light .btn {
+  background-color: #f8f9fa !important;
+  border-color: #ced4da !important;
+  color: #000000 !important;
+}
+
+.theme-light .badge {
+  background-color: #e9ecef !important;
+  color: #000000 !important;
+}
+
+.theme-light .progress {
+  background-color: #e9ecef !important;
+}
+
+.theme-light .progress-bar {
+  background-color: #0d6efd !important;
+}
+
+.theme-light .input-group-text {
+  background-color: #f8f9fa !important;
+  border-color: #ced4da !important;
+  color: #000000 !important;
+}
+
+.theme-light .app-header .nav-link,
+.theme-light .app-header .navbar-brand,
+.theme-light .app-header a {
+  color: #000000 !important;
+}
+
+.theme-light .app-header .dropdown-menu {
+  background-color: #ffffff !important;
+  border-color: #dee2e6 !important;
+}
+
+.theme-light .app-header .dropdown-item {
+  color: #000000 !important;
+}
+
+.theme-light .app-header .dropdown-item:hover {
+  background-color: #f8f9fa !important;
+  color: #000000 !important;
+}
+
+.theme-light .app-header .badge {
+  background-color: #e9ecef !important;
+  color: #000000 !important;
+}
+
+.theme-light .app-header .form-control {
+  background-color: #ffffff !important;
+  border-color: #ced4da !important;
+  color: #000000 !important;
+}
+
+.theme-light .app-header .navbar-search {
+  background-color: #f8f9fa !important;
+}
